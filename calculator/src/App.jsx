@@ -73,17 +73,15 @@ function App() {
   }
 
   return (
-    <main
-
-      className="w-screen h-screen bg-gradient-to-b from-indigo-800 to-indigo-900 flex items-center justify-center"
-    >
+    <main className="w-screen h-screen bg-gradient-to-b from-indigo-800 to-indigo-900 flex items-center justify-center">
       <motion.div
-              layout
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.5 }}
-       className=" flex flex-col justify-end w-[25%] h-[60%]  bg-black rounded border border-black border-4 shadow-[0px_10px_50px_1px_rgba(0,0,0,0.75)]">
+        layout
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+        className=" flex flex-col justify-end w-[25%] h-[60%]  bg-black rounded border border-black border-4 shadow-[0px_10px_50px_1px_rgba(0,0,0,0.75)]"
+      >
         <input
           type="text"
           className="w-full h-40 text-6xl text-right text-white bg-transparent outline-none px-4 overflow-hidden whitespace-nowrap text-overflow-ellipsis"
@@ -91,7 +89,8 @@ function App() {
           value={result || input}
           onChange={e => setInput(e.target.value)}
         />
-        <hr class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
+        <hr 
+        class="h-px bg-gray-200 border-0 dark:bg-gray-700" />
         <CalculatorButtons buttons={buttons} inputHandler={inputHandler} />
       </motion.div>
     </main>
