@@ -73,7 +73,7 @@ function App() {
   }
 
   return (
-    <main className="w-screen h-screen bg-gradient-to-b from-indigo-800 to-indigo-900 flex items-center justify-center">
+    <main className="w-screen h-screen bg-gradient-to-b from-neutral-700 to-neutral-600 flex items-center justify-center">
       <motion.div
         layout
         initial={{ opacity: 0 }}
